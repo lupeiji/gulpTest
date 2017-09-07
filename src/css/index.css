@@ -1,0 +1,297 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+.wjs-view a {
+  color: inherit;
+}
+.wjs-head .row div {
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.wjs-head .row div:last-child a:nth-child(1) {
+  color: #fff;
+}
+.wjs-head .row div:first-child a {
+  position: relative;
+}
+.wjs-head .row div:first-child a:hover img {
+  display: block;
+  z-index: 9;
+}
+.wjs-head .row div:first-child a img {
+  position: absolute;
+  top: 13px;
+  left: -5px;
+  display: none;
+}
+.wjs-nav1 .navbar {
+  margin-bottom: 0;
+}
+.wjs-nav1 .container a {
+  height: 80px;
+  line-height: 80px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.wjs-nav1 .container a:hover,
+.wjs-nav1 .container a:focus {
+  border-bottom: 2px solid red;
+}
+.wjs-nav1 .container .navbar-brand .wjsfont-logo {
+  font-size: 70px;
+  color: red;
+}
+.wjs-nav1 .container .navbar-brand .wjsfont-name {
+  font-size: 70px;
+}
+.wjs-lbt .carousel-inner img {
+  width: 100%;
+}
+/* 支付交易保障 */
+.wjs-exchange .container {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+.wjs-exchange .container .row > div {
+  margin-bottom: 20px;
+}
+.wjs-exchange a {
+  color: #808080;
+}
+.wjs-exchange a:hover {
+  color: red;
+}
+.wjs-exchange a .media-left span {
+  font-size: 40px;
+}
+.wjs-exchange a .media-body h4 {
+  font-size: 22px;
+}
+.wjs-waiting {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+.wjs-waiting .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.wjs-waiting .container .pull-left a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.wjs-waiting .container .pull-right a {
+  color: #000;
+}
+.wjs-waiting .container .pull-right a:hover {
+  color: red;
+}
+.wjs-buying a {
+  color: #808080;
+}
+.wjs-buying .tab-content .cart_default {
+  display: block;
+  padding-right: 80px;
+  position: relative;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 2px 2px #ccc;
+  margin-bottom: 12px;
+}
+.wjs-buying .tab-content .cart_default .xinshou {
+  padding-left: 5px;
+  padding-right: 5px;
+  border-right: 1px dashed;
+}
+.wjs-buying .tab-content .cart_default .xinshou .pull-right p {
+  text-align: right;
+}
+.wjs-buying .tab-content .cart_default .xinshou .pull-left p {
+  text-align: left;
+}
+.wjs-buying .tab-content .cart_default .xinshou-rote {
+  width: 80px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  text-align: center;
+  padding-top: 40px;
+}
+.wjs-buying .tab-content .cart_default .xinshou-rote .da {
+  border: 1px solid green;
+  color: red;
+}
+.wjs-buying .tab-content .cart_default .xinshou-rote .re {
+  border: 1px solid red;
+  color: green;
+}
+.wjs-buying .tab-content .cart_default .xinshou-rote:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 1px #ccc;
+}
+.wjs-buying .tab-content .cart_default .xinshou-rote:after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 1px #ccc;
+}
+.wjs-buying .tab-content .cart_default h4 {
+  font-size: 18px;
+  padding: 10px 0;
+  text-align: center;
+}
+.wjs-buying .tab-content .two {
+  background-color: red;
+  color: white;
+}
+.wjs-buying .tab-content .two span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 40px;
+}
+.wjs-news .row .all_news {
+  font-size: 30px;
+  border-bottom: 1px solid;
+  position: relative;
+}
+.wjs-news .row .all_news:before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid;
+  border-radius: 50%;
+}
+.wjs-news .row .all_title {
+  position: relative;
+}
+.wjs-news .row .all_title .line {
+  position: absolute;
+  left: 74px;
+  top: 0;
+  height: 400px;
+  width: 0;
+  border: 1px dashed;
+  z-index: -1;
+}
+.wjs-news .row .all_title ul {
+  list-style: none;
+}
+.wjs-news .row .all_title ul li {
+  margin-bottom: 60px;
+}
+.wjs-news .row .all_title ul li a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+.wjs-news .row .all_title ul li a:hover,
+.wjs-news .row .all_title ul li a:focus {
+  background-color: red;
+}
+.wjs-news .row .all_title ul li a span {
+  font-size: 50px;
+  color: #fff;
+}

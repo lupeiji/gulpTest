@@ -1,0 +1,269 @@
+@import "wjsfont.less";
+
+@bacecolor:#808080;
+
+.wjs-view{
+    a{
+        color: inherit;
+    }
+}
+
+.wjs-head{
+    .row{
+        div{
+            border-right:1px solid; 
+            border-bottom:1px solid;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        div:last-child{
+            a:nth-child(1){
+                color: #fff;
+            }
+        }
+        div:first-child{
+            a{
+                &:hover img{
+                    display: block;
+                    z-index: 9;
+                }
+                position: relative;
+                img{
+                    position: absolute;
+                    top: 13px;
+                    left: -5px;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.wjs-nav1{
+    .navbar{
+        margin-bottom: 0;
+    }
+   .container{
+       a{
+           height: 80px;
+           line-height: 80px;
+           padding-top: 0;
+           padding-bottom: 0;
+           &:hover,&:focus{
+               border-bottom: 2px solid red;
+           }
+  }
+      .navbar-brand{
+          .wjsfont-logo{
+              font-size: 70px;
+              color: red;
+          }
+    .wjsfont-name{
+        font-size: 70px;
+    }
+      }
+   }
+}
+
+.wjs-lbt{
+    .carousel-inner{
+        img{
+            width: 100%;
+        }
+    }
+
+}
+/* 支付交易保障 */
+.wjs-exchange{
+    .container{
+        padding-top: 60px;
+        padding-bottom: 40px;
+        .row>div{
+            margin-bottom: 20px;
+        }
+    }
+    a{
+        color: @bacecolor;
+        &:hover{
+            color: red;
+        }
+        .media-left{
+            span{
+                font-size: 40px;
+            }
+        }
+        .media-body{
+            h4{
+                font-size: 22px;
+            }
+        }
+    }
+}
+// 排队
+.wjs-waiting{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    .container{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .pull-left{
+            a{
+                color: red;
+                border-bottom: 1px dashed red;
+            }
+        }
+        .pull-right{
+            a{
+                color: #000;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+// 微投资
+.wjs-buying{
+    a{
+        color: @bacecolor;
+    }
+    .tab-content{
+        .cart_default{
+            display: block;
+            padding-right: 80px;
+            position: relative;
+            background-color: #f7f7f7;
+            box-shadow: 0 0 2px 2px #ccc;
+            // padding-top: 10px;
+            margin-bottom: 12px;
+
+            .xinshou{
+                padding-left: 5px;
+                padding-right: 5px;
+                    .pull-right{
+                        p{
+                          text-align: right; 
+                        }
+                    }
+                    .pull-left{
+                        p{
+                          text-align: left; 
+                        }
+                    }
+                border-right: 1px dashed;
+            }
+            .xinshou-rote{
+                .da{
+                    border: 1px solid green;
+                    color: red;
+                }
+                .re{
+                    border: 1px solid red;
+                    color: green;
+                }
+                &:before{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    transform: translate(-50%,-50%);
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 2px 1px 1px #ccc;
+                }
+                &:after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    transform: translate(-50%,50%);
+                    width: 20px;
+                    height: 20px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    box-shadow: 0 2px 1px 1px #ccc;
+                }
+                width: 80px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                text-align: center;
+                padding-top: 40px; 
+            }
+            h4{
+                font-size: 18px;
+                padding: 10px 0;
+                text-align: center;
+            }
+        }
+     .two{
+         background-color: red;
+         color: white;
+         span{
+             position: absolute;
+             top: 0;
+             left: 0;
+             font-size: 40px;
+         }
+     }
+    }
+}
+// 新闻
+.wjs-news{
+    .row{
+        .all_news{
+            font-size: 30px;
+            border-bottom: 1px solid;
+            position: relative;
+            &:before{
+                display: block;
+                content: "";
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                bottom:-5px;
+                right: 0;
+                background-color: #fff;
+                border: 1px solid;
+                border-radius: 50%;
+            }
+        }
+        .all_title{
+            position: relative;
+            .line{
+                position: absolute;
+                left: 74px;
+                top: 0;
+                height: 400px;
+                width: 0;
+                border: 1px dashed;
+                z-index: -1;
+            }
+            ul{
+                list-style: none;
+                li{
+                    margin-bottom: 60px;
+                    a{
+                        display: inline-block;
+                        padding: 10px;
+                        background-color: #ccc;
+                        border-radius:50%; 
+                        &:hover,&:focus{
+                            background-color: red;
+                        }
+                        span{
+                            font-size: 50px;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
